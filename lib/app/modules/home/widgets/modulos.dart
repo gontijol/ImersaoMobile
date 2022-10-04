@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:letscode/app/modules/desafio/page.dart';
 import 'package:letscode/app/modules/speech_to_text/controller.dart';
 import 'package:letscode/app/modules/speech_to_text/page.dart';
 
@@ -41,7 +42,7 @@ class WidgetModulo extends GetView {
             width: MediaQuery.of(context).size.width * 0.9,
             child: InkWell(
               onTap: () {
-                // Get.toNamed('/modulo');
+                Get.to(() => desafioApp());
               },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -171,7 +172,7 @@ class WidgetModulo extends GetView {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
-                          'Aplicativo de reconhecimento\nde voz e interações com o usuário',
+                          'Aplicativo de reconhecimento\nde voz e interações com o \n usuário',
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 14,

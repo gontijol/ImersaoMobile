@@ -40,9 +40,10 @@ dependencies:
   percent_indicator: ^4.2.2
   speech_to_text: ^5.6.0
   loading_animation_widget: ^1.2.0+2
+  scribble: ^0.9.1
 
 flutter_native_splash:
-  color: "#ffffff"
+  color: "#002958"
   image: assets/splash/splash.png
   # branding: assets/branding-development.png
   # color_dark: "#121212"
@@ -51,9 +52,6 @@ flutter_native_splash:
 
   android_12:
     image: assets/splash/splash.png
-    # icon_background_color: "#ffffff"
-    # # image_dark: assets/logo-development.png
-    # icon_background_color_dark: "#121212"
 
   web: false
 

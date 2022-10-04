@@ -113,9 +113,4 @@ class SpeechController extends GetxController {
       rotation.value = 1;
     }
   }
-
-  // void onSpeechResult(SpeechRecognitionResult result) async {
-  //   lastWords = result.recognizedWords;
-  //
-  // }
 }

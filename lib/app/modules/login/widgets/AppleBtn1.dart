@@ -11,6 +11,7 @@ class AppleBtn1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         height: 54,
+        width: 150,
         margin: const EdgeInsets.all(15),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),

@@ -81,7 +81,7 @@ class HelpPage extends GetView {
                             padding: const EdgeInsets.only(
                                 top: 20, left: 50.0, right: 50.0),
                             child: Text(
-                              'Aplicativo projetado para compartilhamento de informações e conhecimento para o crescimento profissional desse grupo de desenvolvedores.',
+                              'App feito para o evento Imersão Mobile 2022',
                               style: TextStyle(fontSize: 25),
                             ),
                           )

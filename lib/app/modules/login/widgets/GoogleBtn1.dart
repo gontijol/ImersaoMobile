@@ -11,8 +11,8 @@ class GoogleBtn1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 40,
-        width: 100,
+        height: 54,
+        width: 150,
         margin: const EdgeInsets.all(15),
         decoration: BoxDecoration(
           border: Border.all(color: alpha_light_blue),

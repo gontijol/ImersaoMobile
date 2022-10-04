@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 // ignore: unused_import
 import 'package:letscode/app/core/values/colors.dart';
+import 'package:letscode/app/modules/create_account/controller.dart';
 import 'package:letscode/app/modules/create_account/widgets/HelpButton.dart';
 import 'package:letscode/app/modules/help_page/help_page.dart';
 import 'package:letscode/app/modules/home/homePage.dart';
@@ -15,18 +16,10 @@ class LoginPage extends GetView {
 
   @override
   Widget build(BuildContext context) {
+    Get.lazyPut(() => LoginController());
     return GestureDetector(
       onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
-      //     appBar: AppBar(
-      //   title: const Text('VISION - Exemplo Teste'),
-      //   centerTitle: true,
-      // ))
       child: Scaffold(
-        // appBar: AppBar(
-        //   title: const Text('Login'),
-        //   backgroundColor: dark_blue,
-        //   centerTitle: true,
-        // ),
         body: Container(
           width: double.infinity,
           height: double.infinity,
@@ -53,10 +46,10 @@ class LoginPage extends GetView {
                 children: [
                   Center(
                       child: Container(
-                    width: 200,
+                    width: 500,
                     height: 250,
                     child: Image(
-                      height: MediaQuery.of(context).size.height * 0.45,
+                      height: MediaQuery.of(context).size.height * 0.55,
                       width: MediaQuery.of(context).size.width * 0.45,
                       image: AssetImage('assets/splash/lets_code_login.png'),
                     ),
@@ -67,8 +60,8 @@ class LoginPage extends GetView {
                         width: MediaQuery.of(context).size.width * 0.70,
                         height: MediaQuery.of(context).size.height * 0.070,
                         child: TextFormField(
+                          // controller: ()-onChangedLogin(v),
                           cursorColor: dark_blue,
-                          //  maxLines: null,
                           decoration: InputDecoration(
                             filled: true,
                             fillColor: Colors.grey[300],
@@ -120,7 +113,7 @@ class LoginPage extends GetView {
                             child: Text(
                               'Cadastrar',
                               style: TextStyle(
-                                color: dark_blue,
+                                color: Colors.black,
                                 fontSize: 15,
                               ),
                             ),
@@ -157,22 +150,12 @@ class LoginPage extends GetView {
                     ),
                   ),
                   Row(
+                    crossAxisAlignment: CrossAxisAlignment.end,
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      // HelpButton(
-                      //     gradient: LinearGradient(
-                      //       begin: Alignment.topLeft,
-                      //       end: Alignment.bottomRight,
-                      //       colors: [
-                      //         dark_blue,
-                      //         light_blue,
-                      //       ],
-                      //     ),
-                      //     icon: const Icon(Icons.help),
-                      //     onPressed: () {}),
                       AnimatedContainer(
                         height: 50,
-                        width: MediaQuery.of(context).size.width * 0.20,
+                        width: 50,
                         curve: Curves.fastOutSlowIn,
                         duration: const Duration(seconds: 3),
                         decoration: BoxDecoration(
@@ -201,17 +184,6 @@ class LoginPage extends GetView {
                               end: Alignment.bottomRight,
                               colors: [
                                 dark_blue,
-                                // Colors.white,
-                                // Colors.white,
-                                // Colors.white,
-                                // Colors.white,
-                                // Colors.white,
-                                // Colors.white,
-                                // Colors.white,
-                                // Colors.white,
-                                // Colors.white,
-                                // Colors.white,
-                                // Colors.white,
                                 light_blue,
                               ],
                             ),

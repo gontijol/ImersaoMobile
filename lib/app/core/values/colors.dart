@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 //Custom Palette
 const light_blue = Color(0xFF002958);
 const dark_blue = Color.fromARGB(255, 17, 137, 174);
-const default_yellow = Color(0xFFFFB400);
+const default_yellow = Color(0xFFb400);
 
 //Alpha Palette
 const alpha_light_blue = Color(0x22b60dfc);

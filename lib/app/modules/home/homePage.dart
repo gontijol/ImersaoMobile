@@ -38,22 +38,6 @@ class HomePage extends GetView {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            // Container(
-                            //   height: 63.79,
-                            //   width: 83,
-                            //   decoration: BoxDecoration(
-                            //       // color: Color.fromARGB(255, 14, 61, 126),
-                            //       // image: DecorationImage(
-                            //       //   fit: BoxFit.scaleDown,
-                            //       //   colorFilter: ColorFilter.mode(
-                            //       //       Colors.white.withOpacity(0.1),
-                            //       //       BlendMode.lighten),
-                            //       //   image: AssetImage(
-                            //       //       'assets/splash/logo_white.png'),
-                            //       // ),
-                            //       ),
-                            // ),
-                            // SizedBox(width: 10),
                             Text(
                               'IMERSÃO MOBILE',
                               style: TextStyle(
@@ -67,39 +51,6 @@ class HomePage extends GetView {
                     ),
                   ),
                   SizedBox(height: 10),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'APP CANIVETE',
-                        style: TextStyle(
-                            color: default_yellow,
-                            fontSize: 32,
-                            fontWeight: FontWeight.normal),
-                      ),
-                      // LinearPercentIndicator(
-                      //   barRadius: Radius.circular(11),
-                      //   backgroundColor: light_blue,
-                      //   linearGradient: LinearGradient(
-                      //       begin: Alignment.centerLeft,
-                      //       end: Alignment.centerRight,
-                      //       colors: [
-                      //         Colors.white,
-                      //         Colors.white,
-                      //         Colors.white,
-                      //         Colors.white,
-                      //         Colors.white,
-                      //         light_blue,
-                      //       ]),
-
-                      //   width: 335.0,
-                      //   lineHeight: 14.0,
-                      //   percent: 0.99,
-                      //   // backgroundColor: Colors.grey.withAlpha(50),
-                      //   // progressColor: Colors.white,
-                      // ),
-                    ],
-                  ),
                 ],
               ),
             ),
@@ -122,7 +73,7 @@ class HomePage extends GetView {
               ),
               child: Text(
                 'VOLTAR',
-                style: TextStyle(fontSize: 20),
+                style: TextStyle(fontSize: 20, color: Colors.white),
               ),
             )
             // SingleChildScrollView(
